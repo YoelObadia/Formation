@@ -92,7 +92,7 @@ export function LeadFormSection({ data }: LeadFormProps) {
                                     </div>
                                     <Button
                                         type="submit"
-                                        className="w-full bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange)]/90 text-white font-bold h-16 text-xl transition-all duration-200 hover:scale-[1.02] mt-4 shadow-lg"
+                                        className="w-full bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange)]/90 text-white font-bold h-auto py-4 text-lg sm:text-xl transition-all duration-200 hover:scale-[1.02] mt-4 shadow-lg whitespace-normal leading-tight"
                                     >
                                         {data.button}
                                     </Button>
