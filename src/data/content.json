@@ -1,0 +1,87 @@
+{
+    "header": {
+        "logo_text_first": "NCAI",
+        "logo_text_highlight": "Académie",
+        "cta": "S'inscrire"
+    },
+    "hero": {
+        "title": "NCAI Académie — Maîtrisez l’IA & le No-Code pour créer des outils utiles dès cette semaine",
+        "subtitle": "Une formation intensive en Israël, pensée pour les francophones : LLMs, RAG, Agents intelligents et automatisation No-Code. Passez de “je comprends” à “je livre” — avec des cas concrets, une méthode guidée et un accompagnement qui transforme votre productivité.",
+        "cta": "Recevoir le programme"
+    },
+    "philosophy": {
+        "quote": "L'IA ne remplacera pas les profils No-Code. Elle remplacera ceux qui n’apprennent pas à orchestrer l’IA avec le No-Code.",
+        "author": "NCAI Académie"
+    },
+    "team": [
+        {
+            "name": "Mickaël Lechamps",
+            "role": "Professeur IA",
+            "bio": "Expert en LLMs, RAG et systèmes d’agents. Son approche est simple : démystifier l’IA moderne et la rendre actionnable. Vous apprenez à concevoir des assistants fiables, à structurer vos données, à améliorer la précision des réponses et à déployer des workflows IA qui tiennent en production — sans blabla, avec des exercices guidés et des retours précis.",
+            "image": "/team/mickael.jpg"
+        },
+        {
+            "name": "Yossi Gabbay",
+            "role": "Professeur No-Code",
+            "bio": "Spécialiste de l’automatisation, de la productivité et du Vibe Coding. Il transforme une idée en outil opérationnel : formulaires, dashboards, CRM, systèmes de suivi, automations multi-apps. Vous repartez avec des process concrets, une logique d’architecture simple et une méthode pour livrer vite, proprement, sans écrire une ligne de code.",
+            "image": "/team/yossi.jpg"
+        },
+        {
+            "name": "Raphaël Skouri",
+            "role": "Coordinateur",
+            "bio": "Le pilier de la formation : suivi, cadence, réussite. Il s’assure que chaque étudiant avance, termine ses livrables et sait présenter ses projets. Il coordonne la progression, clarifie les objectifs, débloque les obstacles et aligne la stratégie globale : transformer votre apprentissage en résultats visibles (outils, automatisations, portfolio).",
+            "image": "/team/raphael.jpg"
+        }
+    ],
+    "curriculum": [
+        {
+            "id": "rag",
+            "title": "RAG & LLMs",
+            "description": "Comprenez ce qui fait la différence entre une démo et un assistant fiable. Vous apprenez à connecter un LLM à vos documents et données (RAG), à structurer le contexte, à réduire les hallucinations, et à obtenir des réponses cohérentes et vérifiables. Objectif : construire un assistant “métier” (support, vente, opérations, RH) qui répond mieux que la recherche classique."
+        },
+        {
+            "id": "agents",
+            "title": "Agents Intelligents",
+            "description": "Passez de l’IA qui “répond” à l’IA qui “agit”. Vous apprenez à orchestrer des agents capables de planifier, exécuter des tâches, appeler des outils, vérifier leur travail et itérer. Résultat : des workflows autonomes (qualification de leads, reporting, synthèses, préparation de rendez-vous, suivi opérationnel) qui vous font gagner des heures chaque semaine."
+        },
+        {
+            "id": "vibe",
+            "title": "Vibe Coding",
+            "description": "Créez plus vite, sans coder, en combinant prompts, logique produit et outils No-Code. Vous apprenez à prototyper, tester, itérer et livrer des micro-outils utiles : pages, formulaires, automatisations, mini-apps internes. Objectif : transformer une idée en solution en 48–72h, avec une méthode reproductible."
+        }
+    ],
+    "section_titles": {
+        "team": "Notre équipe",
+        "program": "Le Programme",
+        "program_subtitle": "Une stack technique à la pointe de l'innovation, conçue pour un impact immédiat.",
+        "target": "Pour Qui ?"
+    },
+    "target_audience": [
+        {
+            "role": "Managers",
+            "benefit": "Décidez plus vite et exécutez mieux : automatisez les points de friction, obtenez des synthèses fiables, standardisez les process et mettez en place des assistants métiers pour votre équipe. Vous gagnez du temps, vous réduisez les erreurs et vous augmentez la qualité d’exécution."
+        },
+        {
+            "role": "RH",
+            "benefit": "Optimisez sourcing, tri, onboarding et communication interne : agents pour présélectionner, résumer, comparer, générer des supports et automatiser les relances. Résultat : une expérience candidat plus fluide, une meilleure traçabilité et un vrai gain de bande passante."
+        },
+        {
+            "role": "Finance",
+            "benefit": "Accélérez le reporting et le contrôle : assistants pour analyser des fichiers, produire des résumés structurés, détecter des anomalies, préparer des tableaux de bord et automatiser les routines. Vous sécurisez les process tout en réduisant drastiquement le temps passé sur les tâches répétitives."
+        }
+    ],
+    "form": {
+        "title": "Recevez le programme complet + un diagnostic rapide de votre cas",
+        "subtitle": "Laissez vos coordonnées et dites-nous votre objectif (pro, entreprise, reconversion). Nous vous envoyons le plan de formation et vous proposons un échange court pour valider le meilleur parcours — en fonction de votre niveau et de vos besoins.",
+        "button": "Envoyer et recevoir le programme",
+        "success_title": "Demande envoyée !",
+        "success_message": "Nous reviendrons vers vous très rapidement.",
+        "copyright": "© {year} NCAI Académie.",
+        "input_placeholders": {
+            "name": "Nom complet",
+            "email": "Email",
+            "phone": "Téléphone",
+            "goal": "Votre objectif (pro, entreprise, reconversion)..."
+        }
+    }
+}
