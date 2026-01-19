@@ -174,7 +174,7 @@ export function InteractiveHero({ data }: InteractiveHeroProps) {
             {/* Increased transparency to 0.8 and brighter to show text - keeping dark ambiance but cleaner */}
             <div className="absolute inset-0 z-0 select-none pointer-events-none">
                 <Image
-                    src="/hero-bg.png"
+                    src="/hero-bg.webp"
                     alt="AI Background"
                     fill
                     className="object-cover opacity-80 mix-blend-screen contrast-125"

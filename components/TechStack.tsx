@@ -15,8 +15,8 @@ const tools = [
 
 export function TechStack() {
     return (
-        <section className="py-12 bg-black border-y border-white/5 overflow-hidden relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10 pointer-events-none" />
+        <section className="py-12 bg-black/40 border-y border-white/5 overflow-hidden relative backdrop-blur-sm">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80 z-10 pointer-events-none" />
 
             <div className="flex">
                 <motion.div

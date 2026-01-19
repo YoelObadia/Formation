@@ -51,13 +51,13 @@ export function AITerminal() {
     }, [currentLineIndex, startTyping]);
 
     return (
-        <section className="py-24 bg-[#0a0a0a] flex justify-center px-4">
+        <section className="py-24 relative flex justify-center px-4">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 onViewportEnter={() => setStartTyping(true)}
-                className="w-full max-w-3xl bg-[#020817] rounded-xl border border-white/10 shadow-2xl overflow-hidden font-mono text-sm sm:text-base"
+                className="w-full max-w-3xl bg-[#020817] rounded-xl border border-white/10 shadow-2xl overflow-hidden font-mono text-sm sm:text-base relative z-10"
             >
                 {/* Terminal Header */}
                 <div className="bg-white/5 px-4 py-3 flex items-center gap-2 border-b border-white/5">

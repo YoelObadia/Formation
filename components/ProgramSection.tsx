@@ -24,25 +24,25 @@ interface ProgramProps {
 
 export function ProgramSection({ data, title, subtitle }: ProgramProps) {
     return (
-        <section id="programme" className="min-h-screen flex flex-col justify-center py-24 bg-black">
+        <section id="programme" className="min-h-screen flex flex-col justify-center py-24 relative">
             <div className="w-full max-w-[95vw] xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12">
                 <div className="text-center mb-16 lg:mb-24">
                     <h2 className="text-3xl font-bold text-white sm:text-5xl text-center">{title}</h2>
                     <p className="mt-6 text-gray-400 max-w-3xl mx-auto text-lg lg:text-xl">{subtitle}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-12 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-8 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 no-scrollbar">
                     {data.map((module, index) => {
                         const Icon = iconMap[module.id] || Brain;
 
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
-                                whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="flex"
+                                className="flex min-w-[85vw] md:min-w-0 snap-center"
                             >
                                 <Card className="flex flex-col h-full w-full bg-white/5 border-white/10 hover:border-[var(--color-brand-blue)]/50 hover:bg-white/10 transition-all duration-300 group cursor-default p-6 lg:p-8">
                                     <CardHeader className="text-center pb-6">

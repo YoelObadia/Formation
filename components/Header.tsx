@@ -1,6 +1,10 @@
-import Link from "next/link";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { BrainCircuit } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 interface HeaderProps {
   data: {
@@ -11,15 +15,35 @@ interface HeaderProps {
 }
 
 export function Header({ data }: HeaderProps) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#020817]/80 backdrop-blur-md supports-[backdrop-filter]:bg-[#020817]/60">
+    <header
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled
+        ? "border-b border-white/10 bg-[#020817] shadow-lg"
+        : "bg-transparent"
+        }`}
+    >
       <div className="w-full px-4 sm:px-8 lg:px-12">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="#hero" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <BrainCircuit className="h-6 w-6 text-[var(--color-brand-blue)]" />
-            <span className="text-xl font-bold tracking-tight text-white">
-              {data.logo_text_first} <span className="text-[var(--color-brand-blue)]">{data.logo_text_highlight}</span>
-            </span>
+        <div className="flex h-20 md:h-28 lg:h-32 items-center justify-between">
+          <Link href="#hero" className="flex items-center hover:opacity-80 transition-opacity">
+            <Image
+              src="/logo.webp"
+              alt="Logo"
+              width={300}
+              height={120}
+              className="h-16 md:h-24 lg:h-28 w-auto object-contain"
+              priority
+            />
           </Link>
           <nav className="flex items-center gap-4">
             <Button

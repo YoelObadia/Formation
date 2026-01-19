@@ -34,7 +34,7 @@ export function LeadFormSection({ data }: LeadFormProps) {
     };
 
     return (
-        <footer id="lead-form" className="min-h-screen flex flex-col justify-center py-24 bg-gradient-to-b from-[#020817] to-black border-t border-white/10">
+        <footer id="lead-form" className="min-h-screen flex flex-col justify-center py-24 bg-black/40 border-t border-white/10 backdrop-blur-sm">
             <div className="w-full max-w-[95vw] xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12">
                 <div className="max-w-2xl mx-auto">
                     <Card className="bg-white/5 border-white/10 shadow-2xl overflow-hidden glass-card">

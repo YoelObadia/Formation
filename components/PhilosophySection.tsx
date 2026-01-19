@@ -12,10 +12,7 @@ interface PhilosophyProps {
 
 export function PhilosophySection({ data }: PhilosophyProps) {
     return (
-        <section className="min-h-screen flex flex-col justify-center py-24 bg-[#020817]/50 border-y border-white/5 relative overflow-hidden">
-
-            <div className="absolute inset-0 bg-[url('/hero-bg.png')] opacity-10 bg-cover bg-center mix-blend-overlay pointer-events-none" />
-
+        <section className="min-h-screen flex flex-col justify-center py-24 bg-black/20 border-y border-white/5 relative overflow-hidden backdrop-blur-sm">
             <div className="w-full max-w-[95vw] xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
                 <div className="max-w-6xl mx-auto text-center">
                     <motion.div
